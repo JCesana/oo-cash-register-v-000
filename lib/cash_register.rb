@@ -1,5 +1,4 @@
 class CashRegister
-  
   attr_accessor :total, :discount, :all_items, :transactions
   
   def initialize(discount = 0)
@@ -18,6 +17,7 @@ class CashRegister
       @all_items << item
     end 
   end 
+  
   
   def apply_discount
     if @discount != 0 

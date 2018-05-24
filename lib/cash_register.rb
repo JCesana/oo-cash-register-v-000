@@ -12,4 +12,13 @@ class CashRegister
     @total += (price * qty)
   end 
   
+  def apply_discount
+    if @discount !== 0 
+      @total = @total * (1 - @discount)
+      @total
+    else 
+      @total
+    end 
+  end 
+  
 end 
